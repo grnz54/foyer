@@ -27,7 +27,7 @@
 				<section id="past" >
 					<section data-background-image="/img/ccrendering.png">Crossroads Chapel Renovation Campaign</section>
 					<section data-background-image="/img/ccrendering.png">What's the plan?</section>
-						<section id="history" transition=concave data-background-image="/img/ccrendering.png" data-autoslide="1000">
+						<section id="history" data-background-image="/img/ccrendering.png" data-autoslide="1000">
 								<h3> 4 Phases </h3>
 							<p class="fragment"> Phase 1 - Admin Wing and Prayer Chapel<span class="fragment highlight-green">...Complete</span></p>
 							<p class="fragment"> Phase 2 - Foyer, Choir Room<span class="fragment highlight-blue">...In progress</span></p>
@@ -40,8 +40,8 @@
 				</section>
 				<section>
 			  	<section>What's been done</section>
-						<section id="complete1" transition=concave data-background-image="/img/reception.png" data-autoslide="1000">>
-							<h3> Phase 1.1 - Admin Wing </h3>
+						<section id="complete1" data-background-image="/img/reception.png" data-autoslide="1000">
+							<h3> Phase 1.1</h3>
 							<p class="fragment"> Offices</p>
 							<p class="fragment"> Reception area </p>
 							<p class="fragment"> Counseling Rooms</p>
@@ -50,12 +50,13 @@
 							how do pictures work here?
 							</aside>
 						</section>
-						<section id="complete2" transition=concave data-background-image="/img/reception.png" data-autoslide="3000">>
-							<h3> Phase 1.2 - Prayer Chapel </h3>
+						<section id="complete2" data-background-image="/img/reception.png">
+							<h3> Phase 1.2 </h3>
+								<p class="fragment"> Prayer Chapel</p>
 								<img width="500" height="500" data-src="/img/chapel.png" alt="chapel"></p>
 						</section>
-						<section id="complete1" transition=concave data-background-image="/img/reception.png" data-autoslide="1000">>
-							<h3> Phase 2.1 - Classrooms </h3>
+						<section id="complete1" data-background-image="/img/reception.png" data-autoslide="1000">>
+							<h3> Phase 2.1 </h3>
 							<p class="fragment"> Classrooms</p>
 							<p class="fragment"> Nursery</p>
 							<p class="fragment"> Youth Room</p>
@@ -63,8 +64,8 @@
 					</section>
 					<section>
 						<section>What's next?</section>
-							<section id="nextup" transition=concave >
-								<h3> Phase 2.2 - Foyer </h3>
+							<section id="nextup" >
+								<h3> Phase 2.2 </h3>
 								<p class="fragment"> Foyer</p>
 								<p class="fragment"> Choir Room</p>
 								<p class="fragment"> Library</p>
@@ -73,7 +74,7 @@
 					</section>
 					<section>
 							<section>How do we get there?</section>
-								<section id="funding" transition=concave >
+								<section id="funding" >
 									<h3> Funding </h3>
 									<p class="fragment"> What it costs:  $145,000</p>
 									<p class="fragment"> What we have:  $125,000 in equity</p>
@@ -86,7 +87,7 @@
 					</section>
 					<section>
 							<section> Questions?</section>
-							<section id="nextup" transition=concave data-autoslide="1000">>
+							<section id="nextup" data-autoslide="1000">
 								<h3> See your Board of Trustees </h3>
 								<p class="fragment"> Glenn Dicken</p>
 								<p class="fragment"> Bill Volker</p>
@@ -110,6 +111,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				transition: 'zoom', // none/fade/slide/convex/concave/zoom
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
@@ -121,7 +123,7 @@
 			// Slide every 2 seconds, will add overrides too
 			Reveal.configure({
   		autoSlide: 2000
-});
+			});
 		</script>
 	</body>
 </html>
