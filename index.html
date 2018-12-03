@@ -62,15 +62,28 @@
 							<p class="fragment"> Youth Room</p>
 						</section>
 					</section>
-					<section>
+					<section transition=fade>
 						<section>What's next?</section>
-							<section id="nextup" >
-								<h3> Phase 2.2 </h3>
-								<p class="fragment"> Foyer</p>
-								<p class="fragment"> Choir Room</p>
-								<p class="fragment"> Library</p>
-								<p class="fragment"> Fellowship Area</p>
-							</section>
+						<section id="choir" transition=fade>
+							<h3> Phase 2.2 </h3>
+									<h4>Choir Room</h4>
+									<img width="500" height="350" data-src="img/choirdraw.JPG" alt="choir">
+						</section>
+						<section id="lib" transition=fade>
+							<h3> Phase 2.2 </h3>
+								<h4>Library</h4>
+								<img width="500" height="350" data-src="img/librarydraw.JPG" alt="lib">
+						</section>
+						<section id="fell" transition=fade>
+							<h3> Phase 2.2 </h3>
+								<h4>Fellowship Area</h4>
+								<img width="500" height="350" data-src="img/fellowship.JPG" alt="fellowship">
+						</section>
+						<section id="nextup" transition=fade>
+							<h3> Phase 2.2 </h3>
+									<h4>Foyer</h4>
+									<img width="500" height="350" data-src="img/foyer.JPG" alt="Foyer">
+						</section>
 					</section>
 					<section>
 							<section>How do we get there?</section>
@@ -80,9 +93,12 @@
 									<p class="fragment highlight-blue"> What we have:  $125,000 in equity</p>
 									<p class="fragment highlight-green"> What we NEED:  $20,000 in contributions</p>
 								</section>
-							<section>Pledges</section>
-							 	<section>
-								<img width="500" height="500" data-src="img/goal1.JPG" alt="goal"></p>
+							<section>Congregational Contribution</section>
+							 	<section data-autoslide="5000">
+									<h3>Pledge</h3>
+                  <img width="500" height="350" data-src="img/pledgecard.JPG" alt="pledge">
+									<p class="fragment"> We need you for this project to be successful.</p>
+									<p class="fragment"> Please, prayerfully consider signing a pledge card today.</p>
 								</section>
 					</section>
 					<section>
@@ -99,7 +115,6 @@
 						</section>
 
 					</section>
-				</section>
 			</div>
 		</div>
 
@@ -111,7 +126,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				transition: 'zoom', // none/fade/slide/convex/concave/zoom
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
 				loop: true, // Loop the presentation
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
